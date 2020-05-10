@@ -1,12 +1,57 @@
-body{
+body {
     font-family: sans-serif;
 }
 
 button {
     background-color: white;
-    width: 100px;
-    height: 60px;
     border: black 1px solid;
     font-size: 16px;
     border-radius: 8px;
+    padding: 10px;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header, #filter-buttons, #list-result, #footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header {
+    box-shadow: gray 0px 3px 0px;
+}
+#list-result {
+    flex-wrap: wrap;
+}
+
+#list-result .item {
+    margin: 5px;
+    text-align: center; 
+    width: 20%;   
+}
+
+#list-result span, #list-result img {
+    display: block;
+}
+
+#list-result img {
+    height: 140px;
+}
+
+#paginate-result, #paginate-comment, #comment {
+    margin: 5px;
+    text-align: center;     
+}
+
+#footer {
+    margin: 5px;  
+}
+
+#description-search{
+    margin: 5px; 
+}
+
